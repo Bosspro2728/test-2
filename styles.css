@@ -5,7 +5,22 @@
 }
 
 /* --------------Styles that are used a lot in the website-------------- */
- 
+
+.font-montserrat{
+    font-family: Montserrat;
+}
+.align-left-text {
+    text-align: left;
+}
+.p-10-30-10-30 {
+    padding: 10px 30px 10px 30px;
+}
+.font-lora {
+    font-family: Lora;
+}
+.font-500{
+    font-weight: 500;
+}
 .text-B7926A-color{
     color: #B7926A;
 }
@@ -57,35 +72,34 @@ nav h1 {
     font-family: Cormorant;
     font-size: 18px;
     font-weight: 400;
-    text-align: left;
 }
 
 .links {
     gap: 25px;
 }
 nav a {
-    font-family: Lora;
     font-size: 18px;
     font-weight: 400;
     text-decoration: none;
     color: #222529;
 }
-.search input {
-    width: 376px;
-    height: 41px;
+.search {
+    width: 360px;
     border-radius: 20.5px;
     padding-left: 5px;
+    background: #FFFFFF;
 }
-.search i{
-    position: absolute;
-    right: 19%;
-    top: 6.5%;
+.search input {
+    border: none;
+    width: 80%;
+    height: 41px;
+    border-radius: 20.5px;
 }
 
 .nav-icons {
     gap: 20px;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
     header {
         padding: 0px;
     }
@@ -97,67 +111,77 @@ nav a {
     }
 }
 
+@media only screen and (max-width: 800px) {
+    .search input{
+        width: 100px;
+    }
+}
+@media only screen and (max-width: 1100px) {
+    nav h1 {
+        font-size: 14px;
+    }
+    nav a {
+        font-size: 14px;
+    }
+}
+
 
 /* --------------Section 1-------------- */
 .section-1{
     max-width: 100%;
+    position: relative;
+    img {
+        object-fit: cover;
+    }
 }
-.section-1 .text-on-image {
+.text-on-image {
     padding-left: 10px;
     position: absolute;
     top: 50%;
     gap: 10px;
+    transform: translateY(-50%);
     flex-wrap: wrap;
     h1{
-        font-family: Lora;
         font-size: 96px;
         font-weight: 500;
-        text-align: left;
         color: #FFFFFF;
     }
     h5{
-        font-family: Montserrat;
         font-size: 26px;
         font-weight: 400;
-        text-align: left;
         color: #FFFFFF;
         max-width: 793px;
     }
     button {
         padding: 15px 40px 15px 40px;
-        font-family: Montserrat;
         font-size: 24px;
         font-weight: 500;
         max-width: 40%;
     }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
     .section-1 .text-on-image {
-        top: 10%;
+        /* top: 10%; */
         h1 {
             font-family: Lora;
             font-size: 32px;
             font-weight: 500;
-            line-height: 40.96px;
-            text-align: left;
+            /* line-height: 40.96px; */
             color: #FFFFFF;
         }
         h5{
-            font-family: Montserrat;
             font-size: 12px;
             font-weight: 400;
-            line-height: 14.63px;
-            text-align: left;
+            /* line-height: 14.63px; */
             color: #FFFFFF;
             max-width: 300px;
         }
         button {
             max-width: 40%;
             padding: 10px 20px 10px 20px;
-            font-family: Montserrat;
             font-size: 12px;
             font-weight: 400;
-            line-height: 14.63px;
+            /* line-height: 14.63px; */
 
         }
     }
@@ -177,20 +201,17 @@ nav a {
 .snipet{
     gap: 20px;
     h2 {
-        font-family: Lora;
         font-size: 40px;
         font-weight: 500;
-        line-height: 51.2px;
+        /* line-height: 51.2px; */
     }
     h4{
         color: #858080;
-        font-family: Montserrat;
         font-size: 22px;
         font-weight: 400;
     }
     button {
         padding: 15px 40px 15px 40px;
-        font-family: Montserrat;
         font-size: 24px;
         font-weight: 500;
         max-width: 362px;
@@ -208,31 +229,7 @@ nav a {
     top: 50%;
     transform: translate(20%, -50%);
 }
-.inner-second-image-glide {
-    gap: 20px;
-    h3 {
-        font-family: Lora;
-        font-size: 24.06px;
-        font-weight: 600;
-        line-height: 30.8px;
-        text-align: center;
-        text-align: center;
-    }
-    h5 {
-        font-family: Montserrat;
-        font-size: 15.31px;
-        font-weight: 400;
-        line-height: 18.67px;
-        text-align: center;
-        color: #FFFFFF;
-    }
-    button {
-        border: 0.55px solid #B7926A;
-        background: transparent;
-        padding: 10px;
-    }
-}
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
     .section-2{
         padding: 0px;
         margin: 0px;
@@ -250,29 +247,6 @@ nav a {
         left: 10%;
         transform: translate(20%, -50%);
     }
-    .inner-second-image-glide {
-        h3 {
-            font-family: Lora;
-            font-size: 18px;
-            font-weight: 600;
-            line-height: 23.04px;
-            text-align: center;
-
-        }
-        h5 {
-            font-family: Montserrat;
-            font-size: 12px;
-            font-weight: 400;
-            line-height: 14.63px;
-            text-align: center;
-        }
-        button {
-            border: 0.55px solid #B7926A;
-            background: transparent;
-            padding: 10px;
-        }
-
-    }
 }
 
 
@@ -282,12 +256,11 @@ nav a {
     padding: 0px 30px 50px 30px;
     gap: 10px;
     div{
-        max-width: 855;
-        max-height: 405;
+        width: 100%;
         background: #F9F9F9;
         img {
-            max-width: 100%;
-            height: 360px;
+            width: 100%;
+            aspect-ratio: 855/405;
         }
     }
     div h1,h3 {
@@ -311,7 +284,6 @@ nav a {
     max-width: 100%;
     gap: 50px;
     align-items: center;
-    padding: 10px 30px 10px 30px;
     margin-bottom: 30px;
 }
 
@@ -320,29 +292,24 @@ nav a {
     gap: 20px;
     align-items: center;
     img {
-        width: 400px;
-        height: 400px;
+        width: 100%;
+        aspect-ratio: 400/400;
     }
     .main-txt {
-        font-family: Montserrat;
         font-size: 16px;
         font-weight: 400;
-        line-height: 19.5px;
-        text-align: left;
+        /* line-height: 19.5px; */
     }
     .price-1{
-        font-family: Montserrat;
         font-size: 18px;
         font-weight: 500;
-        line-height: 21.94px;
-        text-align: left;
+        /* line-height: 21.94px; */
         display: inline;
     }
     .price-2 {
-        font-family: Montserrat;
         font-size: 16px;
         font-weight: 400;
-        line-height: 19.5px;
+        /* line-height: 19.5px; */
         text-align: center;
         color: #00000052;
         text-decoration:line-through;
@@ -357,7 +324,6 @@ nav a {
     max-width: 100%;
     gap: 20px;
     align-items: center;
-    padding: 10px 30px 10px 30px;
     margin: 10px;
 }
 
@@ -367,11 +333,13 @@ nav a {
     grid-template-rows: 1fr 1fr;
     gap: 5px;
     img {
-        max-width: 400px;
-        max-height: 400px;
+        /* max-width: 400px;
+        max-height: 400px; */
+        width: 100%;
+        aspect-ratio: 400/400;
     }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
     .grid-images {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
@@ -383,36 +351,39 @@ nav a {
 
 /* --------------Section 6-------------- */
 .section-6 {
-    max-width: 100%;
+    width: 100%;
     margin-bottom: 120px;
     .map {
-        width: 781px;
-        height: 450px;
+        /* width: 781px;
+        height: 450px; */
         background-color: #222529;
+        width: 100%;
+        height: 100%;
+        aspect-ratio: 860/540;
         img {
             padding-bottom: 30px;
         }
         h3 {
-            font-family: Lora;
             font-size: 36px;
             font-weight: 400;
-            line-height: 46.08px;
+            /* line-height: 46.08px; */
             letter-spacing: 0.06499999761581421px;
-            text-align: left;
             color: #FFFFFF;
         }
         h5 {
-            font-family: Lora;
             font-size: 24px;
             font-weight: 400;
-            line-height: 30.72px;
+            /* line-height: 30.72px; */
             letter-spacing: 0.06499999761581421px;
-            text-align: left;
         }
-
     };
+    .google-map {
+        width: 100%;
+        height: 100%;
+        aspect-ratio: 860/540;
+    }
 }
-@media only screen and (max-width:600px){
+@media only screen and (max-width:700px){
     .section-6 {
         margin-bottom: 30px;
         padding: 10px 30px 10px 30px;
@@ -439,15 +410,12 @@ footer {
             font-family: Cormorant;
             font-size: 21.27px;
             font-weight: 400;
-            line-height: 25.76px;
-            text-align: left;
+            /* line-height: 25.76px; */
         }
         h6 {
-            font-family: Montserrat;
             font-size: 14px;
             font-weight: 400;
-            line-height: 17.07px;
-            text-align: left;
+            /* line-height: 17.07px; */
         }
     }
     #col-2, #col-3, #col-4 {
@@ -458,12 +426,10 @@ footer {
            width: 100%;
         }
         h5 {
-            font-family: Montserrat;
             font-size: 14px;
             font-weight: 400;
-            line-height: 24px;
+            /* line-height: 24px; */
             letter-spacing: 0.06499999761581421px;
-            text-align: left;
         }
         
     }    
@@ -497,4 +463,20 @@ footer {
     background: transparent;
     border: 0.5px solid #474443;
     padding: 5px;
+}
+@media only screen and (max-width:1000px) {
+    footer {
+        gap: 30px;
+    }
+    
+}
+
+@media only screen and (max-width:700px) {
+    footer {
+        margin: 0px;
+        padding: 10px 30px 10px 30px;
+        border: none;
+        gap: 10px;
+    }
+    
 }

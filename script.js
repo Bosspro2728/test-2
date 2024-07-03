@@ -1,8 +1,8 @@
 screenChange = (event) => {
-    var width = document.body.clientWidth;
+    var width = window.innerWidth
     const mobileLayout = document.getElementsByClassName("mobile")
     const desktopLayout = document.getElementsByClassName("desktop")
-    if (width <= 600) {
+    if (width <= 700) {
         for (let i = 0; i < mobileLayout.length; i++) {
             const element = mobileLayout[i];
             element.classList.remove("hide");
@@ -12,7 +12,7 @@ screenChange = (event) => {
             element.classList.add("hide");
         }            
     } 
-    else {
+    else if (width > 700 ) {
         for (let i = 0; i < mobileLayout.length; i++) {
             const element = mobileLayout[i];
             element.classList.add("hide");
