@@ -25,7 +25,6 @@ screenChange = (event) => {
 }
 screenChange()
 window.addEventListener("resize", screenChange)
-
 function visibilityFunction(classp, classb) {
     const x = document.getElementsByClassName(classp);
     const button = document.getElementById(classb)
@@ -47,9 +46,4 @@ function visibilityFunction(classp, classb) {
         }
     }
 }
-// This script is used for making a smooth transion from desktop to mobile
-// and vice versa. we call the function twice because if we only used it 
-// in the event listener when somebody would refresh the page it would show 
-// mobile and desktop elements at the same time. running it twice slows down
-// the site but it fixes the bug and the time it takes to run is not too long
-//Explained better in the README file.
+

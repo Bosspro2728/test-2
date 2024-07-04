@@ -254,10 +254,30 @@ nav a {
 }
 .flex-slide {
     gap: 0px;
+    height: auto;
+    overflow-x: hidden;
 }
 @media only screen and (max-width: 1421px) {
     .section-2 {
         gap: 5px;
+    }
+    .snipet {
+        h2 {
+            font-size: 20px;
+        }
+        h4 {
+            font-size: 12px;
+        }
+        button {
+            padding: 10px auto 10px auto;
+            font-size: 14px;
+        }
+    }
+}
+@media only screen and (max-width: 1250px) {
+    .carusel-img {
+        width: 300px;
+        aspect-ratio: 300 / 295;
     }
 }
 @media only screen and (max-width: 931px) {
@@ -266,6 +286,10 @@ nav a {
     }
     .section-2 {
         gap: 5px;
+    }
+    .carusel-img {
+        width: 200px;
+        aspect-ratio: 300 / 295;
     }
 }
 @media only screen and (max-width: 700px) {
@@ -279,6 +303,16 @@ nav a {
     }
     .snipet {
         margin: 10px;
+        h2 {
+            font-size: 40px;
+            font-weight: 500;
+            /* line-height: 51.2px; */
+        }
+        h4{
+            color: #858080;
+            font-size: 22px;
+            font-weight: 400;
+        }
         button {
             width: 100%;
             font-size: 12px;
@@ -326,6 +360,13 @@ nav a {
 
     }
 }
+@media only screen and (max-width: 700px) {
+    .section-3 {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}
 @media only screen and (max-width: 600px) {
     .section-3 {
         padding: 10px 30px 10px 30px;
@@ -339,8 +380,6 @@ nav a {
     align-items: center;
     margin-bottom: 30px;
 }
-
-
 .price-div {
     gap: 20px;
     align-items: center;
@@ -370,6 +409,17 @@ nav a {
 
     }
 }
+@media only screen and (max-width: 700px) {
+    .section-4{
+        flex-direction: column;
+    }
+    .price-div{
+        flex-direction: column;
+    }
+}
+
+
+
 
 
 /* --------------Section 5-------------- */
@@ -393,6 +443,9 @@ nav a {
     }
 }
 @media only screen and (max-width: 700px) {
+    .section-5{
+        flex-direction: column;
+    }
     .grid-images {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
@@ -438,6 +491,7 @@ nav a {
 }
 @media only screen and (max-width:700px){
     .section-6 {
+        flex-direction: column;
         width: 90%;
         margin-bottom: 30px;
         padding: 10px 25px 10px 25px;
