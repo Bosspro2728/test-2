@@ -25,7 +25,7 @@ screenChange = (event) => {
 }
 screenChange()
 window.addEventListener("resize", screenChange)
-function visibilityFunction(classp, classb) {
+function visibilityFunction(classp, classb) {//This function  will be used for toggeling the topics in the footer
     const x = document.getElementsByClassName(classp);
     const button = document.getElementById(classb)
     const brcket = document.createElement("i")
