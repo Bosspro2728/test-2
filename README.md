@@ -43,3 +43,7 @@
 - [X] Section 5 I only added the flex-direction: column; to the section-5 class.
 - [x] Section 6 I also only added the flex-direction: column; to the section-6 class.
 - [X] I put all my js in for the desktop-mobile logic in one file. Glide js code inside of a script in the html.
+
+## Phase 6: Adding Extra functionality
+- [X] I added a nav sideBar the styles of it are in a sepret file the js is in a script in the html
+- [X] I also added a dropdown effect but it has no animation.
