@@ -12,7 +12,7 @@ screenChange = (event) => {
             element.classList.add("hide");
         }            
     } 
-    else if (width > 700 ) {
+    else if ( width > 700) {
         for (let i = 0; i < mobileLayout.length; i++) {
             const element = mobileLayout[i];
             element.classList.add("hide");
