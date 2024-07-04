@@ -530,7 +530,7 @@ footer {
             /* line-height: 17.07px; */
         }
     }
-    #col-2, #col-3, #col-4 {
+    #col-2, #col-3, #col-4, #col-3-dropdown, #col-4-dropdown {
         h3 {
            border-bottom: 1px solid #B7926A;
            color: #B7926A;
@@ -552,7 +552,12 @@ footer {
             text-decoration: none;
             color: #222529;
         }
-
+    }
+    #col-3-dropdown, #col-4-dropdown {
+        a {
+            text-decoration: none;
+            color: #222529;
+        }
     }
 }
 .icons {

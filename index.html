@@ -8,9 +8,17 @@
     <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.theme.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="sideBarStyles.css">
     <title>Document</title>
 </head>
 <body>
+    <div id="sidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">Shop Wine</a>
+        <a href="#">Spirits</a>
+        <a href="#">Pantry</a>
+        <a href="#">E-Gift Cards</a>
+    </div>
     <header class="flex center desktop">
         <nav class=" flex flex-row flex-betwwen w-full">
             <h1 class="align-left-text">ENGLEWOOD WINE MERCHANTS</h1>
@@ -38,9 +46,9 @@
     </header>
     <header class="flex center mobile ">
         <nav class="flex flex-row flex-betwwen w-full">
-            <div class="flex flex-row">
+            <div class="flex flex-row" style="gap: 10px;">
                 <!-- <i class="fa-solid fa-bars pointer"></i> -->
-                <img src="assets/menu.png" alt="">
+                <img onclick="openNav()" src="assets/menu.png" alt="">
                 <i class="fa-solid fa-magnifying-glass pointer"></i>
             </div>
             <h1>EWM</h1>
@@ -242,7 +250,6 @@
                 <i class="fa-brands fa-youtube"></i>
                 <i class="fa-brands fa-pinterest-p"></i>
             </div>
-
         </div>
         <div class="flex flex-col h-full" id="col-2">
             <h3>Customer service</h3> <!--border-bottom: 1px solid #B7926A -->
@@ -299,14 +306,50 @@
             <input type="email" required> 
             <button>Sing up</button>
         </div>
-        <div class="flex flex-row flex-betwwen" id="col-2">
-            <h3 style="color: rgb(0, 0, 0);">Customer service</h3><i class="fas fa-angle-down"></i>
+        <div class="flex flex-row flex-betwwen" id="col-2" onclick='visibilityFunction("col-2-dropdown","col-2-bracket")'>
+            <h3 style="color: rgb(0, 0, 0);">Customer service</h3><i id="col-2-bracket" class="fas fa-angle-down"></i>
         </div>
-        <div class="flex flex-row flex-betwwen" id="col-3">
-            <h3 style="color: rgb(0, 0, 0);">Information</h3><i class="fas fa-angle-down"></i>
+        <div class="hide flex flex-col center" id="col-2-dropdown">
+            <h3>Customer service</h3> <!--border-bottom: 1px solid #B7926A -->
+
+            <h5 class="text-B7926A-color font-montserrat align-left-text">Store Location</h5> <!--  #B7926A -->
+            <h6 class="font-montserrat">
+                One Engle Street, Englewood, NJ 07631</h6>
+
+            <h5 class="text-B7926A-color font-montserrat align-left-text">Phone</h5> <!--  #B7926A -->
+            <h6 class="font-montserrat">
+                877-568-8820 / 201-568-8820</h6>
+
+            <h5 class="text-B7926A-color font-montserrat align-left-text">Email</h5> <!--  #B7926A -->
+            <h6 class="font-montserrat">
+                info@englewoodwinemerchants.com</h6>
+
+            <h5 class="text-B7926A-color font-montserrat align-left-text">Store Hours</h5> <!--  #B7926A -->
+            <h6 class="font-montserrat">Monday - Friday:  10:00 a.m. - 7:00 p.m.</h6>
+            <h6 class="font-montserrat">Saturday:  11:00 a.m. - 7:00 p.m.</h6>
+            <h6 class="font-montserrat">Sunday:   12:00 p.m. - 6:00 p.m. (Oct - Dec)</h6>
         </div>
-        <div class="flex flex-row flex-betwwen" id="col-4">
-            <h3 style="color: rgb(0, 0, 0);">More</h3><i class="fas fa-angle-down"></i>
+        <div class="flex flex-row flex-betwwen" id="col-3" onclick='visibilityFunction("col-3-dropdown", "col-3-bracket")'>
+            <h3 style="color: rgb(0, 0, 0);">Information</h3><i id="col-3-bracket" class="fas fa-angle-down"></i>
+        </div>
+        <div class="hide flex flex-col center" id="col-3-dropdown">
+            <a href="#">Track My Order</a>
+            <a href="#">Shipping Terms</a>
+            <a href="#">Local Delivery</a>
+            <a href="#">In Store Pickup</a>
+            <a href="#">FAQ</a>
+            <a href="#">Contact Us</a>
+        </div>
+        <div class="flex flex-row flex-betwwen" id="col-4" onclick='visibilityFunction("col-4-dropdown", "col-4-bracket")'>
+            <h3 style="color: rgb(0, 0, 0);">More</h3><i id="col-4-bracket" class="fas fa-angle-down"></i>
+        </div>
+        <div class="hide flex flex-col center" id="col-4-dropdown">
+            <a href="#">My Account</a>
+            <a href="#">Login</a>
+            <a href="#">My Cart</a>
+            <a href="#">My Wishtlistp</a>
+            <a href="#">Blog</a>
+            <a href="#">Privacy</a>
         </div>
         <div class="icons">
             <i class="fa-brands fa-facebook"></i>
@@ -329,11 +372,11 @@
     </script>
     <script>
         function openNav() {
-          document.getElementById("mySidenav").style.width = "50%";
+          document.getElementById("sidenav").style.width = "50%";
         }
         
         function closeNav() {
-          document.getElementById("mySidenav").style.width = "0";
+          document.getElementById("sidenav").style.width = "0";
         }
     </script>
     <script src="script.js"></script>

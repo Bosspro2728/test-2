@@ -25,25 +25,28 @@ screenChange = (event) => {
 }
 screenChange()
 window.addEventListener("resize", screenChange)
-function visibilityFunction(classp, classb) {//This function  will be used for toggeling the topics in the footer
-    const x = document.getElementsByClassName(classp);
-    const button = document.getElementById(classb)
-    const brcket = document.createElement("i")
-    for (let i = 0; i < x.length; i++) {
-        const element = x[i];
-        if (element.style.display === "none") {
-            element.style.display = "flex";
-            brcket.classList.add("fa-solid")
-            brcket.classList.add("fa-angle-up")
-            button.textContent = '';
-            button.append(brcket);
-        } else {
-            element.style.display = "none";
-            brcket.classList.add("fas")
-            brcket.classList.add("fa-angle-down")
-            button.textContent = '';
-            button.append(brcket);
-        }
+function visibilityFunction(idp, ida) {//This function  will be used for toggeling the topics in the footer
+    const x = document.getElementById(idp)
+    const bracket = document.getElementById(ida)
+    if (x.style.display === "none") {
+        x.style.display = "flex";
+        bracket.className = "";
+        bracket.classList.add("fa-solid")
+        bracket.classList.add("fa-angle-up")
+    } else {
+        x.style.display = "none";
+        bracket.className = "";
+        bracket.classList.add("fas")
+        bracket.classList.add("fa-angle-down")
     }
 }
+
+// function searchVisibility(ids) {
+//     const input = document.getElementById(ids);
+//     if (input.style.display === "none") {
+//         input.style.display = "flex";
+//     } else {
+//         input.style.display = "none";
+//     }
+// }
 
