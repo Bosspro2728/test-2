@@ -33,4 +33,13 @@
 - [X] Bug 7: I had the same problem as bug 6 in the footer I fixed it the same way.
 - [X] Bug 8: The last section (6) was not very responsive especaily the iframe I gave both the div and iframe width 100% and the iframe a height of 100% also gave them the proper aspect-ratio and remove the default width and height of the iframe(map)
 - [X] Bug 9: The glide js carusel is not responsive. The next image on the carusel after a certain width starts getting on top of the current image. With some help and a lot tries using height:auto; and overflow-x:hidden; it worked but a new bug was introduced.
-- [ ] Bug 10: Even though the overflow was fixed another bug appired. This time when we decrees the width of the window the image doesn't decress and since we are using overflow hidden it hudes a part of the image.
+- [X] Bug 10: Even though the overflow was fixed another bug appired. This time when we decrees the width of the window the image doesn't decress and since we are using overflow hidden it hudes a part of the image.I fixed it using media queries for specific width-s of the screen and in those media queries changing the width-s of the two images.
+
+## Phase 5: Refactoring my Html,Css,JS(makeing the code more readable)
+- [X] I started with my html, I had used two of every section(including header,footer) one for mobile and one for desktop as I have explained in Phase 3, but some of the sections didn't need it because they were almost identical.
+- [X] Section 1 was the only one I hadn't done two copies of.
+- [X] Section 3 mobile was very similar to desktop so i deleted the mobile and only added justify-content: center; align-items: center; flex-direction: column;(in media query)
+- [X] Section 4 I also removed the mobile section and only added flex-direction: column; to both section-4 class and price-div(in menida query)
+- [X] Section 5 I only added the flex-direction: column; to the section-5 class.
+- [x] Section 6 I also only added the flex-direction: column; to the section-6 class.
+- [X] I put all my js in for the desktop-mobile logic in one file. Glide js code inside of a script in the html.
