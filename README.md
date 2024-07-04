@@ -32,4 +32,4 @@
 - [X] Bug 6: The images on section 3 didn't start at the same level at a certain width beacuse the text below the image didn't allow it. To fix it I removed the align-content: center; and only let justify-content: center;
 - [X] Bug 7: I had the same problem as bug 6 in the footer I fixed it the same way.
 - [X] Bug 8: The last section (6) was not very responsive especaily the iframe I gave both the div and iframe width 100% and the iframe a height of 100% also gave them the proper aspect-ratio and remove the default width and height of the iframe(map)
-- [] Bug 9: The glide js carusel is not responsive. The next image on the carusel after a certain width starts getting on top of the current image.
+- [ ] Bug 9: The glide js carusel is not responsive. The next image on the carusel after a certain width starts getting on top of the current image.
