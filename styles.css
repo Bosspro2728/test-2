@@ -280,6 +280,11 @@ nav a {
         aspect-ratio: 300 / 295;
     }
 }
+@media only screen and (max-width: 1040px) {
+    .snipet button {
+        padding: 15px 13px 15px 13px;
+    }
+}
 @media only screen and (max-width: 931px) {
     .glide {
         max-width: 70%;
@@ -382,7 +387,7 @@ nav a {
 }
 .price-div {
     gap: 20px;
-    align-items: center;
+    align-items: unset;
     img {
         width: 100%;
         aspect-ratio: 400/400;
