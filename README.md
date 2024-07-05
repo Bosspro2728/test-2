@@ -47,3 +47,4 @@
 ## Phase 6: Adding Extra functionality
 - [X] I added a nav sideBar the styles of it are in a sepret file the js is in a script in the html
 - [X] I also added a dropdown effect but it has no animation.
+- [X] Added a search bar of mobile
