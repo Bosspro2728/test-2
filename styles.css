@@ -574,7 +574,7 @@ footer {
 
 #col-1 input {
     border: 0px;
-    border-bottom: 0.5px solid #474443
+    border-bottom: 0.5px solid #474443;
 }
 #col-1 button {
     background: transparent;
@@ -594,6 +594,12 @@ footer {
         padding: 10px 30px 10px 30px;
         border: none;
         gap: 10px;
+    }
+    #col-1 {
+        margin-bottom: 50px;
+    }
+    #col-1 button {
+        height: 35px;
     }
     
 }

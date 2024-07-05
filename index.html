@@ -49,9 +49,10 @@
             <div class="flex flex-row" style="gap: 10px;">
                 <!-- <i class="fa-solid fa-bars pointer"></i> -->
                 <img onclick="openNav()" src="assets/menu.png" alt="">
-                <i class="fa-solid fa-magnifying-glass pointer"></i>
+                <i class="fa-solid fa-magnifying-glass pointer" onclick='searchVisibility("mobile-search", "nav-title")'></i>
+                <input type="search" class="hide" id="mobile-search" style="border: 0px; border-bottom: 0.5px solid #474443; background: transparent; width: 40vw;">
             </div>
-            <h1>EWM</h1>
+            <h1 id="nav-title">EWM</h1>
             <div class="flex flex-row">
                 <!-- <i class="fa-solid fa-bag-shopping pointer"></i> -->
                 <img src="assets/bag.svg" alt="">

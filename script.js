@@ -41,12 +41,15 @@ function visibilityFunction(idp, ida) {//This function  will be used for toggeli
     }
 }
 
-// function searchVisibility(ids) {
-//     const input = document.getElementById(ids);
-//     if (input.style.display === "none") {
-//         input.style.display = "flex";
-//     } else {
-//         input.style.display = "none";
-//     }
-// }
+function searchVisibility(ids, idt) {
+    const input = document.getElementById(ids);
+    const title = document.getElementById(idt)
+    if (input.style.display === "none") {
+        input.style.display = "flex";
+        title.style.display = "none";
+    } else {
+        input.style.display = "none";
+        title.style.display = "flex";
+    }
+}
 
