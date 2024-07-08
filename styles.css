@@ -555,7 +555,8 @@ nav a {
 
 /* --------------Section 6-------------- */
 .section-6 {
-    width: 100%;
+    padding: 10px 30px 10px 30px;
+    max-width: 100%;
     margin-bottom: 120px;
     .map {
         /* width: 781px;
@@ -618,7 +619,7 @@ footer {
     border-top: 1px solid #B7926A;
     padding: 60px 30px 60px 30px;
     margin-top: 50px;
-    gap: 150px;
+    gap: 15%;
     div {
         gap: 10px;
         text-align: start;
