@@ -521,8 +521,7 @@ nav a {
     gap: 20px;
     align-items: center;
     margin: 10px;
-    margin-left: auto;
-    margin-right: auto;
+    justify-content: center;
     .snipet {
         margin: 10px 10px 10px 10px;
     }
