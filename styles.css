@@ -62,7 +62,6 @@ header {
 }
 nav{
     background: #D3D8DCED;
-    max-width: 1826px;
     max-height: 89px;
     padding: 20px 47px 20px 47px;
     align-items: center;
@@ -293,6 +292,7 @@ nav a {
     button {
         padding: 15px 40px 15px 40px;
         /* max-width: 362px; */
+        /* width: 50%; */
         aspect-ratio: 328/75;
         background-color: transparent;
         border: 1px solid #B7926A;
@@ -376,8 +376,8 @@ nav a {
             /* line-height: 14.63px; */
         }
         button {
-            max-width: 150px;
-            max-height: 30px;
+            width: 40%;
+            /* max-width: 150px; */
             font-size: 12px;
             font-weight: 400;
             padding: 0px;
@@ -394,7 +394,7 @@ nav a {
     justify-content: center;
     gap: 10px;
     div{
-        margin: 20px;
+        /* margin: 20px; */
         width: 100%;
         background: #F9F9F9;
         img {
@@ -407,7 +407,7 @@ nav a {
         color: #202020;
         align-content: center;
         font-family: Lora;
-        font-size: 18px;
+        font-size: 28px;
         font-weight: 500;
         line-height: 30.72px;
         text-align: left;
@@ -417,9 +417,9 @@ nav a {
         color: #202020;
         align-content: center;
         font-family: Montserrat;
-        font-size: 14px;
+        font-size: 24px;
         font-weight: 400;
-        line-height: 25px;
+        line-height: 35px;
         text-align: left;
     }
     div button {
@@ -430,7 +430,7 @@ nav a {
         align-content: center;
         text-align: start;
         a {
-            font-size: 14px;
+            font-size: 24px;
             align-content: center;
             text-align: start;
         }
@@ -441,6 +441,19 @@ nav a {
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        div {
+            margin: 20px;
+        }
+        div h1 {
+            font-size: 18px;
+        }
+        div h3 {
+            font-size: 14px;
+            line-height: 25px;
+        }
+        div button a {
+            font-size: 14px;
+        }
     }
 }
 @media only screen and (max-width: 600px) {
@@ -518,11 +531,13 @@ nav a {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 5px;
-    img {
+    div {
         /* max-width: 400px;
         max-height: 400px; */
-        width: 100%;
-        aspect-ratio: 400/400;
+        img {
+            width: 100%;
+            aspect-ratio: 433/404;
+        }
     }
 }
 @media only screen and (max-width: 700px) {
