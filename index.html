@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css">
-    <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.theme.min.css">
+    <link rel="stylesheet" href="glide/glide.core.min.css">
+    <link rel="stylesheet" href="glide/glide.theme.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="sideBarStyles.css">
@@ -45,7 +45,7 @@
     </header>
     <header class="flex center mobile ">
         <nav class="flex flex-row flex-betwwen w-full">
-            <div class="flex flex-row" style="gap: 10px;">
+            <div class="flex flex-row center" style="gap: 20px;">
                 <!-- <i class="fa-solid fa-bars pointer"></i> -->
                 <img onclick="openNav()" src="assets/menu.png" alt="">
                 <i class="fa-solid fa-magnifying-glass pointer" onclick='searchVisibility("mobile-search", "nav-title")'></i>
@@ -63,16 +63,15 @@
 
     <section class="section-1 align-left-text">
         <img class="w-full" src="assets/deltetto-1953-grapes-940x530 1.png" alt="">
-        <div class=" flex flex-col text-on-image">
+        <div class="flex flex-col text-on-image">
             <h1 class="align-left-text font-lora">Curated Selections</h1>
             <h5 class="font-montserrat align-left-text">    
                 Join 10,000 clients nationwide  who enjoy reading about and 
                 receiving the finest selections from the wine world.
             </h5>
-            <button class="font-montserrat" style="background: #B7926A">Shop Now</button>
-            <button class="font-montserrat">Join Us</button>
+            <button class="font-montserrat shop" style="background: #B7926A">Shop Now</button>
+            <button class="font-montserrat  join">Join Us</button>
         </div>
-        
     </section>
 
     <section class=" flex flex-row flex-betwwen section-2 desktop">
@@ -142,7 +141,7 @@
                 with an Englewood Wine Merchants e-gift card. 
             </h3>
             <br>
-            <a class="text-B7926A-color">Learn More<i class="fa-solid fa-up-right-from-square"></i></a>
+            <button><a class="text-B7926A-color">Learn More   <i class="fa-solid fa-up-right-from-square"></i></a></button>
         </div>
         <div class="flex flex-col">        
             <img src="assets/Rectangle 12.png" alt=""> 
@@ -155,12 +154,12 @@
                 clients, colleagues, friends, or loved ones.
             </h3>
             <br>
-            <a class="text-B7926A-color">Learn More<i class="fa-solid fa-up-right-from-square"></i></a>
+            <button><a class="text-B7926A-color">Learn More   <i class="fa-solid fa-up-right-from-square"></i></a></button>
         </div>
     </section>
 
-    <section class=" flex flex-row section-4 p-10-30-10-30">
-        <div class="snipet">
+    <section class="flex flex-row section-4 p-10-30-10-30">
+        <div class="flex flex-col snipet">
             <h2>
                 Cellar Essentials
             </h2>
@@ -195,7 +194,7 @@
     </section>
 
     <section class="flex flex-row section-5 p-10-30-10-30">
-        <div class="snipet">
+        <div class="flex flex-col snipet">
             <h2>
                 Follow Us
             </h2>
@@ -291,7 +290,10 @@
 
         </div>
     </footer>
-    <footer class=" flex flex-col mobile">
+    <h3 class="desktop" style=" padding:30px 30px 0px 30px;font-family: Montserrat;font-size: 14px;font-weight: 400;line-height: 40px;letter-spacing: 0.06499999761581421px;text-align: left;">
+        Copyright © 2022 Englewood Wine Merchants. All Rights Reserved.
+    </h3>
+    <footer class="flex flex-col mobile">
         <div class="flex flex-col" id="col-1">
             <h6><strong>Lorem Ipsum </strong></h6>
             <div>
@@ -356,11 +358,14 @@
             <i class="fa-brands fa-youtube"></i>
             <i class="fa-brands fa-pinterest-p"></i>
         </div>
+        <h3 style="font-family: Montserrat;font-size: 14px;font-weight: 400;line-height: 40px;letter-spacing: 0.06499999761581421px;text-align: left;">
+            Copyright © 2022 Englewood Wine Merchants. All Rights Reserved.
+        </h3>
 
     </footer>
 
 
-    <script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>
+    <script src="glide/glide.min.js"></script>
     <script>
         new Glide('.glide', {
             type: 'carousel',

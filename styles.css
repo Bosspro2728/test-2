@@ -125,6 +125,7 @@ nav a {
     }
     nav {
         border-radius: 0px;
+        padding: 20px 15px 20px 15px;
     }
     nav div {
         gap: 20px;
@@ -143,53 +144,94 @@ nav a {
     }
 }
 .text-on-image {
-    padding-left: 10px;
+    padding-left: 20px;
     position: absolute;
-    top: 50%;
+    top: 60%;
     gap: 10px;
     transform: translateY(-50%);
     flex-wrap: wrap;
     h1{
+        color: #FFFFFF;
+        font-family: Lora;
         font-size: 96px;
         font-weight: 500;
-        color: #FFFFFF;
+        line-height: 122.88px;
+        text-align: left;
+
     }
     h5{
-        font-size: 26px;
-        font-weight: 400;
         color: #FFFFFF;
         max-width: 793px;
+        font-family: Montserrat;
+        font-size: 26px;
+        font-weight: 400;
+        line-height: 31.69px;
+        text-align: left;
     }
     button {
         padding: 15px 40px 15px 40px;
+        aspect-ratio: 362/54;
+        max-width: 40%;
+    }
+    .shop {
+        color: #FFFFFF;
+        font-family: Montserrat;
         font-size: 24px;
         font-weight: 500;
-        max-width: 40%;
+        line-height: 29.26px;
+        aspect-ratio: 128/29;
+    }
+    .join {
+        color: #1C1C1C;
+        font-family: Montserrat;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 29.26px;
+        aspect-ratio: 128/29;
+    }
+}
+/* @media only screen and (max-width: 1700px) {
+    
+} */
+@media only screen and (max-width: 1400px) {
+    .text-on-image {
+        top: 50%;
+        .shop {
+            line-height: unset;
+            aspect-ratio: unset;
+        }
+        .join {
+            line-height: unset;
+            aspect-ratio: unset;
+        }
     }
 }
 @media only screen and (max-width: 800px) {
+    .section-1 img {
+        height :342px !important;
+    }
     .section-1 .text-on-image {
-        /* top: 10%; */
+        top: 60%;
         h1 {
             font-family: Lora;
             font-size: 32px;
             font-weight: 500;
-            /* line-height: 40.96px; */
+            line-height: 40.96px;
             color: #FFFFFF;
         }
         h5{
             font-size: 12px;
             font-weight: 400;
-            /* line-height: 14.63px; */
+            line-height: 14.63px;
             color: #FFFFFF;
             max-width: 300px;
         }
         button {
-            max-width: 40%;
+            max-width: 50%;
             padding: 10px 20px 10px 20px;
             font-size: 12px;
             font-weight: 400;
-            /* line-height: 14.63px; */
+            line-height: unset;
 
         }
     }
@@ -200,13 +242,13 @@ nav a {
             font-family: Lora;
             font-size: 30px;
             font-weight: 500;
-            /* line-height: 40.96px; */
+            line-height: unset;
             color: #FFFFFF;
         }
         h5{
             font-size: 10px;
             font-weight: 400;
-            /* line-height: 14.63px; */
+            line-height: unset;
             color: #FFFFFF;
             max-width: 300px;
         }
@@ -215,7 +257,7 @@ nav a {
             padding: 10px 20px 10px 20px;
             font-size: 10px;
             font-weight: 400;
-            /* line-height: 14.63px; */
+            line-height: unset;
 
         }
     }
@@ -232,21 +274,35 @@ nav a {
 .snipet{
     gap: 20px;
     h2 {
+        font-family: Lora;
         font-size: 40px;
         font-weight: 500;
-        /* line-height: 51.2px; */
+        line-height: 51.2px;
+        text-align: left;
+        color: #000000;
     }
     h4{
         color: #858080;
+        font-family: Montserrat;
         font-size: 22px;
         font-weight: 400;
+        line-height: 26.82px;
+        text-align: left;
+        
     }
     button {
         padding: 15px 40px 15px 40px;
+        /* max-width: 362px; */
+        aspect-ratio: 328/75;
+        background-color: transparent;
+        border: 1px solid #B7926A;
+        border-radius: 2px 0px 0px 0px;
+        color: #202020;
+        font-family: Montserrat;
         font-size: 24px;
         font-weight: 500;
-        max-width: 362px;
-        background-color: #FFFFFF;
+        line-height: 29.26px;
+        text-align: center;
     }
 }
 .glide {
@@ -307,22 +363,25 @@ nav a {
         border: none;
     }
     .snipet {
-        margin: 10px;
+        margin: 40px 10px 40px 10px;
         h2 {
             font-size: 40px;
             font-weight: 500;
-            /* line-height: 51.2px; */
+            line-height: 30.72px;
         }
         h4{
             color: #858080;
             font-size: 22px;
             font-weight: 400;
+            /* line-height: 14.63px; */
         }
         button {
-            width: 100%;
+            max-width: 150px;
+            max-height: 30px;
             font-size: 12px;
             font-weight: 400;
-            padding: 10px 30px 10px 30px;
+            padding: 0px;
+            aspect-ratio: unset;
         }
     }
 }
@@ -335,6 +394,7 @@ nav a {
     justify-content: center;
     gap: 10px;
     div{
+        margin: 20px;
         width: 100%;
         background: #F9F9F9;
         img {
@@ -343,26 +403,37 @@ nav a {
         }
     }
     div h1 {
+        padding-left: 10px;
+        color: #202020;
         align-content: center;
-        text-align: start;
         font-family: Lora;
-        font-size: 24px;
+        font-size: 18px;
         font-weight: 500;
+        line-height: 30.72px;
         text-align: left;
     }
     div h3 {
+        padding-left: 10px;
+        color: #202020;
         align-content: center;
-        text-align: start;
         font-family: Montserrat;
-        font-size: 18px;
+        font-size: 14px;
         font-weight: 400;
+        line-height: 25px;
         text-align: left;
-
     }
-    div a {
+    div button {
+        padding-left: 10px;
+        padding-bottom: 20px;
+        background: transparent;
+        border: none;
         align-content: center;
         text-align: start;
-
+        a {
+            font-size: 14px;
+            align-content: center;
+            text-align: start;
+        }
     }
 }
 @media only screen and (max-width: 700px) {
@@ -384,9 +455,12 @@ nav a {
     gap: 50px;
     align-items: center;
     margin-bottom: 30px;
+    .snipet {
+        margin: 10px 10px 0px 10px;
+    }
 }
 .price-div {
-    gap: 20px;
+    gap: 40px;
     align-items: unset;
     img {
         width: 100%;
@@ -395,12 +469,13 @@ nav a {
     .main-txt {
         font-size: 16px;
         font-weight: 400;
-        /* line-height: 19.5px; */
+        line-height: 19.5px;
+        margin-bottom: 10px;
     }
     .price-1{
         font-size: 18px;
         font-weight: 500;
-        /* line-height: 21.94px; */
+        line-height: 21.94px;
         display: inline;
     }
     .price-2 {
@@ -433,6 +508,9 @@ nav a {
     gap: 20px;
     align-items: center;
     margin: 10px;
+    .snipet {
+        margin: 10px 10px 10px 10px;
+    }
 }
 
 .grid-images {
@@ -502,6 +580,13 @@ nav a {
         padding: 10px 25px 10px 25px;
         .map {
             width: 100%;
+            h3 {
+                font-size: 25px;
+                padding-bottom: 10px;
+            }
+            h5 {
+                font-size: 18px;
+            }
         }
     }
 }
@@ -571,7 +656,7 @@ footer {
     justify-content: start;
     align-items: center;
     gap: 10px;
-    margin: 20px;
+    margin: 20px 20px 20px 0px;
     i {
         color: #B7926A;
     }
