@@ -94,6 +94,9 @@ nav a {
     height: 41px;
     border-radius: 20.5px;
 }
+.search input:focus {
+    outline: none;
+}
 
 .nav-icons {
     gap: 20px;
@@ -320,6 +323,12 @@ nav a {
     gap: 0px;
     height: auto;
     overflow-x: hidden;
+}
+@media only screen and (min-width: 2000px) {
+    .carusel-img {
+        width: 700px;
+        aspect-ratio: 543 / 506;
+    }
 }
 @media only screen and (max-width: 1421px) {
     .section-2 {
