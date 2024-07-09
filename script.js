@@ -60,8 +60,9 @@ function searchVisibility(ids, idt) {
 
 // this function will be used to add the number of things in the shopping cart
 const CartCaunter = document.getElementById("cart-counter")
+const ShopButton = document.getElementById("cart")
 const addItem = (e) => {
     console.log(Number(CartCaunter.innerHTML)+1)
     CartCaunter.innerHTML= Number(CartCaunter.innerHTML)+1
 }
-CartCaunter.addEventListener("click", addItem)
+ShopButton.addEventListener("click", addItem)
