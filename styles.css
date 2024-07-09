@@ -98,6 +98,14 @@ nav a {
 .nav-icons {
     gap: 20px;
 }
+#cart-counter{
+    font-size: 10px;
+    position: relative;
+    padding: 2px 5px 2px 5px;
+    background: #B7926A;
+    border-radius: 100%;
+    align-self: flex-start;
+}
 @media only screen and (max-width: 1100px) {
     nav h1 {
         font-size: 14px;

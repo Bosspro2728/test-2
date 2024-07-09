@@ -1,3 +1,4 @@
+//screeen change mobile logic(conditional rendering)
 screenChange = (event) => {
     var width = window.innerWidth
     const mobileLayout = document.getElementsByClassName("mobile")
@@ -25,7 +26,10 @@ screenChange = (event) => {
 }
 screenChange()
 window.addEventListener("resize", screenChange)
-function visibilityFunction(idp, ida) {//This function  will be used for toggeling the topics in the footer
+
+
+//This function  will be used for toggeling the topics in the mobile footer
+function visibilityFunction(idp, ida) {
     const x = document.getElementById(idp)
     const bracket = document.getElementById(ida)
     if (x.style.display === "none") {
@@ -53,3 +57,11 @@ function searchVisibility(ids, idt) {
     }
 }
 
+
+// this function will be used to add the number of things in the shopping cart
+const CartCaunter = document.getElementById("cart-counter")
+const addItem = (e) => {
+    console.log(Number(CartCaunter.innerHTML)+1)
+    CartCaunter.innerHTML= Number(CartCaunter.innerHTML)+1
+}
+CartCaunter.addEventListener("click", addItem)
