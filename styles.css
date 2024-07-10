@@ -2,7 +2,12 @@
     margin: 0px;
     padding: 0px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    max-width: 100%;
+
+}
+@media only screen and (max-width: 700px) {
+    * {
+        max-width: 100%;
+    }
 }
 
 /* --------------Styles that are used a lot in the website-------------- */
