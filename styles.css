@@ -61,7 +61,11 @@
 .h-full{
     height: 100%;
 }
-
+@media only screen and (min-width: 1921px) {
+    .p-10-30-10-30{
+        padding: 10px 50px 10px 50px;
+    }
+}
 /* --------------Header-------------- */
 header {
     padding: 15px 20px 10px 20px;
@@ -160,7 +164,7 @@ nav a {
     }
 }
 .text-on-image {
-    padding-left: 20px;
+    padding-left: 70px;
     position: absolute;
     top: 60%;
     gap: 10px;
@@ -206,8 +210,10 @@ nav a {
         aspect-ratio: 128/29;
     }
 }
-/* @media only screen and (max-width: 1700px) {
-    
+/* @media only screen and (min-width: 1921px) {
+    .text-on-image {
+        padding-left: 70px;
+    }
 } */
 @media only screen and (max-width: 1400px) {
     .text-on-image {
@@ -228,6 +234,7 @@ nav a {
     }
     .section-1 .text-on-image {
         top: 60%;
+        padding-left: 20px;
         h1 {
             font-family: Lora;
             font-size: 32px;
@@ -286,16 +293,18 @@ nav a {
     padding: 20px 30px 20px 30px;
     margin: 10px;
     align-items: center;
+
 }
 .snipet{
     gap: 20px;
     h2 {
         font-family: Lora;
         font-size: 40px;
-        font-weight: 500;
+        font-weight: 400;
         line-height: 51.2px;
         text-align: left;
         color: #000000;
+
     }
     h4{
         color: #858080;
@@ -320,6 +329,14 @@ nav a {
         font-weight: 500;
         line-height: 29.26px;
         text-align: center;
+    }
+}
+.section-2 .snipet {
+    h2 {
+        text-shadow: 0px 5px 3px rgba(0,0,0,0.5);
+    }
+    h4{
+        text-shadow: 0px 5px 5px rgba(0,0,0,0.5);
     }
 }
 .glide {
@@ -385,6 +402,14 @@ nav a {
     .section-2 div,img {
         border: none;
     }
+    .section-2 .snipet {
+        h2 {
+            text-shadow: unset;
+        }
+        h4{
+            text-shadow: unset;
+        }
+    }
     .snipet {
         margin: 40px 10px 40px 10px;
         h2 {
@@ -426,7 +451,7 @@ nav a {
         }
     }
     div h1 {
-        padding-left: 10px;
+        padding: 50px 50px 0px 50px;
         color: #202020;
         align-content: center;
         font-family: Lora;
@@ -436,7 +461,7 @@ nav a {
         text-align: left;
     }
     div h3 {
-        padding-left: 10px;
+        padding:0px 50px 0px 50px;
         color: #202020;
         align-content: center;
         font-family: Montserrat;
@@ -446,8 +471,7 @@ nav a {
         text-align: left;
     }
     div button {
-        padding-left: 10px;
-        padding-bottom: 20px;
+        padding: 0px 50px 50px 50px;
         background: transparent;
         border: none;
         align-content: center;
@@ -469,11 +493,20 @@ nav a {
             margin: 20px;
         }
         div h1 {
+            padding: 0px;
+            padding-left: 10px;
             font-size: 18px;
         }
         div h3 {
+            padding: 0px;
+            padding-left: 10px;
             font-size: 14px;
             line-height: 25px;
+        }
+        div button {
+            padding: 0px;
+            padding-left: 10px;
+            padding-bottom: 20px;
         }
         div button a {
             font-size: 14px;
@@ -491,17 +524,19 @@ nav a {
     max-width: 100%;
     gap: 50px;
     align-items: center;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
     .snipet {
         margin: 10px 10px 0px 10px;
     }
 }
 .price-div {
     gap: 40px;
+    width: 100%;
     align-items: unset;
     img {
-        width: 100%;
-        aspect-ratio: 400/400;
+        /* width: 100%;
+        aspect-ratio: 400/400; */
+        width: 23vw;
     }
     .main-txt {
         font-size: 16px;
@@ -526,9 +561,22 @@ nav a {
 
     }
 }
+@media only screen and (min-width: 1900px) {
+    .price-div{
+        img {
+            width: 25vw;
+        }
+    }
+}
 @media only screen and (max-width: 700px) {
     .section-4{
         flex-direction: column;
+        .price-div {
+            img {
+                width: 100%;
+                aspect-ratio: 400/400;
+            }
+        }
     }
     .price-div{
         flex-direction: column;
@@ -548,6 +596,7 @@ nav a {
     justify-content: center;
     .snipet {
         margin: 10px 10px 10px 10px;
+        align-self: self-start;
     }
 }
 
@@ -645,6 +694,7 @@ nav a {
 footer {
     justify-content: center;
     /* align-items: center; */
+    width: 100%;
     border-top: 1px solid #B7926A;
     padding: 60px 30px 60px 30px;
     margin-top: 50px;
@@ -663,6 +713,9 @@ footer {
             font-size: 14px;
             font-weight: 400;
             /* line-height: 17.07px; */
+        }
+        input:focus{
+            outline: none;
         }
     }
     #col-2, #col-3, #col-4, #col-3-dropdown, #col-4-dropdown {
@@ -725,6 +778,7 @@ footer {
 
 @media only screen and (max-width:700px) {
     footer {
+        width: unset;
         margin: 0px;
         padding: 10px 30px 10px 30px;
         border: none;
@@ -737,4 +791,14 @@ footer {
         height: 35px;
     }
     
+}
+@media only screen and (min-width: 2100px) {
+    #bottom-text {
+        padding-left: 200px;
+    }
+}
+@media only screen and (max-width: 1850) {
+    #bottom-text {
+        padding-left: 60px;
+    }
 }
