@@ -2,7 +2,6 @@
     margin: 0px;
     padding: 0px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
 }
 @media only screen and (max-width: 700px) {
     * {
@@ -19,7 +18,7 @@
     text-align: left;
 }
 .p-10-30-10-30 {
-    padding: 10px 30px 10px 30px;
+    padding: 10px 50px 10px 50px;
 }
 .font-lora {
     font-family: Lora;
@@ -164,7 +163,7 @@ nav a {
     }
 }
 .text-on-image {
-    padding-left: 70px;
+    padding-left: 100px;
     position: absolute;
     top: 60%;
     gap: 10px;
@@ -438,7 +437,7 @@ nav a {
 /* --------------Section 3-------------- */
 .section-3 {
     max-width: 100%;
-    padding: 0px 30px 50px 30px;
+    padding: 0px 60px 50px 60px;
     justify-content: center;
     gap: 20px;
     div{
@@ -471,7 +470,7 @@ nav a {
         text-align: left;
     }
     div button {
-        padding: 0px 50px 50px 50px;
+        padding: 30px 50px 50px 50px;
         background: transparent;
         border: none;
         align-content: center;
@@ -525,8 +524,9 @@ nav a {
     gap: 50px;
     align-items: center;
     margin-bottom: 50px;
+    padding-right: 60px;
     .snipet {
-        margin: 10px 10px 0px 10px;
+        margin: 10px 10px 0px 0px;
     }
 }
 .price-div {
@@ -561,10 +561,20 @@ nav a {
 
     }
 }
-@media only screen and (min-width: 1900px) {
+@media only screen and (min-width: 2000px) {
     .price-div{
         img {
             width: 25vw;
+        }
+    }
+}
+@media only screen and (max-width: 900px) {
+    .section-4{
+        .price-div {
+            img {
+                width: 100%;
+                aspect-ratio: 400/400;
+            }
         }
     }
 }
@@ -595,7 +605,7 @@ nav a {
     margin: 10px;
     justify-content: center;
     .snipet {
-        margin: 10px 10px 10px 10px;
+        margin: 10px 10px 10px 0px;
         align-self: self-start;
     }
 }
@@ -694,7 +704,7 @@ nav a {
 footer {
     justify-content: center;
     /* align-items: center; */
-    width: 100%;
+    max-width: 100%;
     border-top: 1px solid #B7926A;
     padding: 60px 30px 60px 30px;
     margin-top: 50px;
@@ -792,13 +802,7 @@ footer {
     }
     
 }
-@media only screen and (min-width: 2100px) {
-    #bottom-text {
-        padding-left: 200px;
-    }
-}
-@media only screen and (max-width: 1850) {
-    #bottom-text {
-        padding-left: 60px;
-    }
+#bottom-text {
+    padding-top: 200px;
+    z-index: 100;
 }
