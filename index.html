@@ -8,6 +8,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="sideBarStyles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"> 
     <title>Document</title>
 </head>
 <body>
@@ -27,23 +33,24 @@
                 <a class="font-lora" href="#">Pantry</a>
                 <a class="font-lora" href="#">E-Gift Cards</a>
             </div>
-            <div class="flex flex-row center search">
-                <input type="search" placeholder="  Search entire store here...">
-                <i class="fa-solid fa-magnifying-glass pointer icon"></i>
-            </div>
-            <div class=" flex flex-row nav-icons">
-                <!-- <i class="fa-solid fa-location-dot pointer"></i> -->
-                <img class="pointer" src="assets/geo-alt.svg" alt="">
-                <!-- <i class="fa-regular fa-user pointer"></i> -->
-                <img class="pointer" src="assets/person.svg" alt="">
-                <!-- <i class="fa-solid fa-phone pointer"></i> -->
-                <img class="pointer" src="assets/telephone.svg" alt="">
-                <!-- <i class="fa-solid fa-bag-shopping pointer"></i> -->
-                 <div class="pointer flex center" id="cart" >
-                    <img src="assets/bag.svg" alt="">
-                    <div id="cart-counter" style="color: white;">0</div>
-                 </div>
-
+            <div class="flex flex-row" style="gap: 60px;">
+                <div class="flex flex-row center search">
+                    <input type="search" placeholder="  Search entire store here...">
+                    <i class="fa-solid fa-magnifying-glass pointer icon"></i>
+                </div>
+                <div class=" flex flex-row nav-icons">
+                    <!-- <i class="fa-solid fa-location-dot pointer"></i> -->
+                    <img class="pointer" style="aspect-ratio: 24/28; width: 24px;" src="assets/geo-alt.svg" alt="">
+                    <!-- <i class="fa-regular fa-user pointer"></i> -->
+                    <img class="pointer" style="aspect-ratio: 24/28; width: 24px;" src="assets/person.svg" alt="">
+                    <!-- <i class="fa-solid fa-phone pointer"></i> -->
+                    <img class="pointer" style="aspect-ratio: 24/28; width: 24px;" src="assets/telephone.svg" alt="">
+                    <!-- <i class="fa-solid fa-bag-shopping pointer"></i> -->
+                    <div class="pointer flex center" id="cart">
+                        <img src="assets/bag.svg" alt="">
+                        <div id="cart-counter" style="color: white;">0</div>
+                    </div>
+                </div>
             </div>
         </nav>
     </header>
@@ -80,7 +87,7 @@
 
     <section class=" flex flex-row flex-betwwen section-2 desktop">
         <div class="flex flex-col snipet">
-            <h2 class="font-lora"><strong>Merchant's<br> Pick</strong></h2>
+            <h2 class="font-lora">Merchant's<br> Pick</h2>
             <h4 class="font-montserrat">
                 Hand-selected features for 
                 both budding enthusiasts and 
@@ -121,7 +128,7 @@
     </section>
     <section class="flex flex-col section-2 mobile">
         <div class="flex flex-col snipet">
-            <h2 class="font-lora"><strong>Merchant's Pick</strong></h2>
+            <h2 ><strong class="font-lora">Merchant's Pick</strong></h2>
             <h4 class="font-montserrat">
                 Hand-selected features for 
                 both budding enthusiasts and 
@@ -206,7 +213,7 @@
                 Follow us on Instagram to be 
                 more connected with us.         
             </h4>
-            <button>Follow us</button>
+            <button>Shop Now</button>
         </div>
         <!-- <div class="grid-images">
             <div><img src="assets/Rectangle 14.png" alt=""></div>
@@ -223,6 +230,7 @@
         <div class="flex flex-col center map">
             <img src="assets/map.png" alt="">
             <h3 class="align-left-text font-lora">Our Location</h3>
+            <br class="space">
             <h5 class="text-B7926A-color align-left-text font-lora">One Engle Street, Englewood, NJ 07631</h5>
         </div>
         <div class="google-map w-full">

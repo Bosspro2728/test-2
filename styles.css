@@ -227,7 +227,7 @@ nav a {
         }
     }
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1000px) {
     .section-1 img {
         height :342px !important;
     }
@@ -289,12 +289,13 @@ nav a {
 /* --------------Section 2-------------- */
 .section-2 {
     max-width: 100%;
-    padding: 20px 30px 20px 30px;
-    margin: 10px;
+    padding: 20px 50px 20px 50px;
+    /* margin: 10px; */
     align-items: center;
 
 }
 .snipet{
+    max-width: 380px;
     gap: 20px;
     h2 {
         font-family: Lora;
@@ -316,7 +317,7 @@ nav a {
     }
     button {
         padding: 15px 40px 15px 40px;
-        /* max-width: 362px; */
+        max-width: 362px;
         /* width: 50%; */
         aspect-ratio: 328/75;
         background-color: transparent;
@@ -437,7 +438,7 @@ nav a {
 /* --------------Section 3-------------- */
 .section-3 {
     max-width: 100%;
-    padding: 0px 60px 50px 60px;
+    padding: 0px 50px 50px 50px;
     justify-content: center;
     gap: 20px;
     div{
@@ -484,6 +485,9 @@ nav a {
 }
 @media only screen and (max-width: 700px) {
     .section-3 {
+        padding: 10px 30px 10px 30px;
+    }
+    .section-3 {
         justify-content: center;
         align-items: center;
         flex-direction: column;
@@ -524,7 +528,7 @@ nav a {
     gap: 50px;
     align-items: center;
     margin-bottom: 50px;
-    padding-right: 60px;
+    padding-right: 50px;
     .snipet {
         margin: 10px 10px 0px 0px;
     }
@@ -579,8 +583,14 @@ nav a {
     }
 }
 @media only screen and (max-width: 700px) {
+    .section-4 {
+        padding: 10px 30px 10px 30px;
+    }
     .section-4{
         flex-direction: column;
+        .snipet{
+            align-self: flex-start;
+        }
         .price-div {
             img {
                 width: 100%;
@@ -590,6 +600,30 @@ nav a {
     }
     .price-div{
         flex-direction: column;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .section-4{
+        .snipet{
+            h2 {
+                font-size: 30px;
+            }
+            h4{
+                font-size: 12px;
+            }
+        }
+
+    }
+}
+@media only screen and (max-width: 450px) {
+    .section-4{
+        h4{
+            font-size: 12px;
+        }
+        h2{
+            font-size: 30px;
+        }
+
     }
 }
 
@@ -602,10 +636,10 @@ nav a {
     max-width: 100%;
     gap: 20px;
     align-items: center;
-    margin: 10px;
+    padding: 10px 50px 10px 50px;
     justify-content: center;
     .snipet {
-        margin: 10px 10px 10px 0px;
+        margin: 60px 10px 10px 0px;
         align-self: self-start;
     }
 }
@@ -625,6 +659,10 @@ nav a {
     }
 }
 @media only screen and (max-width: 700px) {
+    .section-5 {
+        padding: 10px 30px 10px 30px;
+        margin: 0px;
+    }
     .section-5{
         flex-direction: column;
     }
@@ -636,10 +674,36 @@ nav a {
         }
     }
 }
+@media only screen and (max-width: 669px) {
+    .section-5{
+        .snipet{
+            h2 {
+                font-size: 30px;
+            }
+            h4{
+                font-size: 16px;
+            }
+        }
+
+    }
+}
+@media only screen and (max-width: 500px) {
+    .section-5{
+        .snipet{
+            h2 {
+                font-size: 30px;
+            }
+            h4{
+                font-size: 12px;
+            }
+        }
+
+    }
+}
 
 /* --------------Section 6-------------- */
 .section-6 {
-    padding: 10px 30px 10px 30px;
+    padding: 10px 50px 10px 50px;
     max-width: 100%;
     margin-bottom: 120px;
     .map {
@@ -674,11 +738,15 @@ nav a {
 }
 @media only screen and (max-width:700px){
     .section-6 {
+        padding: 10px 30px 10px 30px;
+    }
+    .section-6 {
         flex-direction: column;
-        width: 90%;
         margin-bottom: 30px;
-        padding: 10px 25px 10px 25px;
         .map {
+            .space{
+                display: none;
+            }
             width: 100%;
             height: 355px;
             h3 {
@@ -694,11 +762,11 @@ nav a {
         }
     }
 }
-@media only screen and (max-width:514px){
+/* @media only screen and (max-width:514px){
     .section-6 {
         padding: 10px 20px 10px 20px;
     }
-}
+} */
 
 /* --------------Footer-------------- */
 footer {
@@ -731,12 +799,13 @@ footer {
     #col-2, #col-3, #col-4, #col-3-dropdown, #col-4-dropdown {
         h3 {
            border-bottom: 1px solid #B7926A;
+           font-size: 18px;
            color: #B7926A;
            padding-bottom: 20px;
            width: 100%;
         }
         h5 {
-            font-size: 14px;
+            font-size: 16px;
             font-weight: 400;
             /* line-height: 24px; */
             letter-spacing: 0.06499999761581421px;
@@ -749,6 +818,7 @@ footer {
         a {
             text-decoration: none;
             color: #222529;
+            font-size: 16px;
         }
     }
     #col-3-dropdown, #col-4-dropdown {
@@ -782,6 +852,19 @@ footer {
 @media only screen and (max-width:1000px) {
     footer {
         gap: 30px;
+    }
+    
+}
+@media only screen and (min-width:1500px) {
+    #bottom-text{
+        width: 150%;
+    }
+    
+}
+@media only screen and (min-width:1850px) {
+    footer {
+        padding-left: 9%;
+        padding-right: 9%;
     }
     
 }
